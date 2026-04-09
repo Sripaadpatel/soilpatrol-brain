@@ -93,7 +93,7 @@ async def tool_suggest_crop(request: SuggestionRequest):
         prompt = f"""... [Keep your existing prompt here] ..."""
         
         response = ai_client.models.generate_content(
-            model="gemini-2.5-flash", 
+            model="gemini-2.5-pro", 
             contents=prompt, 
             config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.3)
         )
@@ -134,7 +134,7 @@ async def tool_soil_check_in(request: CheckInRequest):
         4. If the soil is catastrophically unsuited for {request.currentCrop}, suggest an alternative.
         """
         response = ai_client.models.generate_content(
-            model="gemini-2.5-flash", 
+            model="gemini-2.5-pro", 
             contents=prompt, 
             config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2)
         )
@@ -176,7 +176,7 @@ async def tool_crop_suitability(request: SuitabilityRequest):
         3. List the required interventions (Fertilizer/Lime) needed before planting can begin.
         """
         response = ai_client.models.generate_content(
-            model="gemini-2.5-flash", 
+            model="gemini-2.5-pro", 
             contents=prompt, 
             config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2)
         )
