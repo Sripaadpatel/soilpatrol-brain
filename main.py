@@ -91,7 +91,21 @@ async def tool_suggest_crop(request: SuggestionRequest):
         search_query = f"Crops that thrive in pH {request.sensorData.phLevel}, Temp {request.sensorData.airTempC}C, and Moisture {request.sensorData.soilMoisturePct}%"
         context = search_crop_knowledge(search_query)
 
-        prompt = f"""... [Keep your existing prompt here] ..."""
+        prompt = f"""
+        TASK: Suggest 3 optimal crops. YOU MUST USE THIS EXACT LIVE SENSOR DATA:
+        - Nitrogen (N): {request.sensorData.nitrogenMg} mg/kg
+        - Phosphorus (P): {request.sensorData.phosphorusMg} mg/kg
+        - Potassium (K): {request.sensorData.potassiumMg} mg/kg
+        - pH: {request.sensorData.phLevel}
+        - Temp: {request.sensorData.airTempC}C
+        - Moisture: {request.sensorData.soilMoisturePct}%
+        
+        KNOWLEDGE BASE: {context}
+        
+        REQUIREMENTS:
+        1. Current Soil Stats summary (Analyze the LIVE SENSOR DATA provided above).
+        2. Suggest 3 crops. For each, list ideal conditions, required soil adjustments (based on EXPERT RULES), expected yield, and market price potential.
+        """
         
         response = ai_client.models.generate_content(
             model="gemini-2.5-flash", 
@@ -124,16 +138,19 @@ async def tool_soil_check_in(request: CheckInRequest):
         
         prompt = f"""
         TASK: Perform a Soil Check-In for the actively growing crop: {request.currentCrop}.
-        LIVE DATA: N:{request.sensorData.nitrogenMg}, P:{request.sensorData.phosphorusMg}, K:{request.sensorData.potassiumMg}, pH:{request.sensorData.phLevel}.
+        YOU MUST USE THIS EXACT LIVE SENSOR DATA:
+        - Nitrogen (N): {request.sensorData.nitrogenMg} mg/kg
+        - Phosphorus (P): {request.sensorData.phosphorusMg} mg/kg
+        - Potassium (K): {request.sensorData.potassiumMg} mg/kg
+        - pH: {request.sensorData.phLevel}
         
         KNOWLEDGE BASE: {context}
         
         REQUIREMENTS:
-        1. Compare Live Stats vs Ideal Stats for {request.currentCrop}.
-        2. Identify deficiencies.
+        1. Compare the provided LIVE SENSOR DATA vs Ideal Stats for {request.currentCrop}.
+        2. Identify deficiencies based strictly on the provided numbers.
         3. Provide actionable fertilizer/amendment recommendations based on the EXPERT RULES.
         4. If the soil is catastrophically unsuited for {request.currentCrop}, suggest an alternative.
-        
         """
         response = ai_client.models.generate_content(
             model="gemini-2.5-flash", 
@@ -168,12 +185,18 @@ async def tool_crop_suitability(request: SuitabilityRequest):
         
         prompt = f"""
         TASK: Evaluate if the farmer should plant {request.targetCrop} in this soil.
-        LIVE DATA: N:{request.sensorData.nitrogenMg}, P:{request.sensorData.phosphorusMg}, K:{request.sensorData.potassiumMg}, pH:{request.sensorData.phLevel}, Temp:{request.sensorData.airTempC}C.
+        YOU MUST USE THIS EXACT LIVE SENSOR DATA:
+        - Nitrogen (N): {request.sensorData.nitrogenMg} mg/kg
+        - Phosphorus (P): {request.sensorData.phosphorusMg} mg/kg
+        - Potassium (K): {request.sensorData.potassiumMg} mg/kg
+        - pH: {request.sensorData.phLevel}
+        - Temp: {request.sensorData.airTempC}C
+        - Moisture: {request.sensorData.soilMoisturePct}%
         
         KNOWLEDGE BASE: {context}
         
         REQUIREMENTS:
-        1. Provide a definitive GO / NO-GO decision for planting {request.targetCrop}.
+        1. Provide a definitive GO / NO-GO decision for planting {request.targetCrop} based on the LIVE SENSOR DATA.
         2. Show the delta between the Live Data and the Ideal Stats for this crop.
         3. List the required interventions (Fertilizer/Lime) needed before planting can begin.
         """
