@@ -2,5 +2,6 @@ fastapi
 uvicorn
 supabase
 google-genai
-pandas
 python-dotenv
+pandas
+cachetools

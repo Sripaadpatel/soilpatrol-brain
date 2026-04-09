@@ -7,6 +7,8 @@ from typing import Optional
 from supabase import create_client, Client
 from google import genai
 from google.genai import types
+from cachetools import TTLCache
+
 
 load_dotenv()
 
