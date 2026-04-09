@@ -64,6 +64,7 @@ You are the SoilPatrol Master Agronomist. Follow these absolute rules derived fr
    - If pH < 5.5: Recommend Agricultural Lime.
    - If pH > 7.5: Recommend Elemental Sulfur.
 4. FORMAT: Always use clear Markdown with bullet points. Include Yield Expectations and Price Estimates where relevant.
+5. ZERO CHATBOT BEHAVIOR: NEVER ask the user to provide data. NEVER create "hypothetical" scenarios. You MUST use the exact LIVE SENSOR DATA provided in the prompt. Skip pleasantries and greetings. Output only the requested report.
 """
 
 # Helper function to query the Vector Database
@@ -132,6 +133,7 @@ async def tool_soil_check_in(request: CheckInRequest):
         2. Identify deficiencies.
         3. Provide actionable fertilizer/amendment recommendations based on the EXPERT RULES.
         4. If the soil is catastrophically unsuited for {request.currentCrop}, suggest an alternative.
+        
         """
         response = ai_client.models.generate_content(
             model="gemini-2.5-flash", 
