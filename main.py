@@ -82,7 +82,7 @@ async def tool_suggest_crop(request: SuggestionRequest):
         1. Current Soil Stats summary.
         2. Suggest 3 crops. For each, list ideal conditions, required soil adjustments (based on EXPERT RULES), expected yield, and market price potential.
         """
-        response = ai_client.models.generate_content(model="gemini-1.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.3))
+        response = ai_client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.3))
         return {"status": "success", "report": response.text}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -107,7 +107,7 @@ async def tool_soil_check_in(request: CheckInRequest):
         3. Provide actionable fertilizer/amendment recommendations based on the EXPERT RULES.
         4. If the soil is catastrophically unsuited for {request.currentCrop}, suggest an alternative.
         """
-        response = ai_client.models.generate_content(model="gemini-1.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2))
+        response = ai_client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2))
         return {"status": "success", "report": response.text}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -131,7 +131,7 @@ async def tool_crop_suitability(request: SuitabilityRequest):
         2. Show the delta between the Live Data and the Ideal Stats for this crop.
         3. List the required interventions (Fertilizer/Lime) needed before planting can begin.
         """
-        response = ai_client.models.generate_content(model="gemini-1.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2))
+        response = ai_client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2))
         return {"status": "success", "report": response.text}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
