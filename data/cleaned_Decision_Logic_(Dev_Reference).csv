@@ -1,0 +1,28 @@
+Parameter,Condition,Threshold Logic,Action / Alert,Fertilizer / Amendment,Dose (kg/ha),Priority
+N,Severe Low,sensor_N < 0.5 × ideal_N,ALERT: Apply N immediately,Urea / DAP,60–100 kg N/ha,HIGH
+N,Mild Low,0.5×ideal ≤ sensor_N < ideal,Schedule N top-dress,Urea,40–60 kg N/ha,MEDIUM
+N,Optimal,ideal_N ≤ sensor_N ≤ 1.2×ideal,No action,—,—,OK
+N,Excess,sensor_N > 1.2 × ideal_N,ALERT: Leach with irrigation,Stop N fertilizers,—,HIGH
+P,Severe Low,sensor_P < 0.5 × ideal_P,ALERT: Apply P immediately,DAP / TSP,60–80 kg P₂O₅/ha,HIGH
+P,Mild Low,0.5×ideal ≤ sensor_P < ideal,Schedule P application,SSP / DAP,40–60 kg P₂O₅/ha,MEDIUM
+P,Optimal,ideal_P ≤ sensor_P ≤ 1.2×ideal,No action,—,—,OK
+K,Severe Low,sensor_K < 0.5 × ideal_K,ALERT: Apply K immediately,MOP / SOP,60–80 kg K₂O/ha,HIGH
+K,Mild Low,0.5×ideal ≤ sensor_K < ideal,Schedule K top-dress,MOP / SOP,40–60 kg K₂O/ha,MEDIUM
+K,Optimal,ideal_K ≤ sensor_K ≤ 1.2×ideal,No action,—,—,OK
+K,Excess,sensor_K > 1.2 × ideal_K,Watch Ca/Mg deficiency,Dolomite,400–500 kg/ha,MEDIUM
+pH,Very Acidic,sensor_pH < 5.5,ALERT: Apply lime urgently,Calcitic Lime,1000–2000 kg/ha,HIGH
+pH,Mildly Acidic,5.5 ≤ sensor_pH < 6.0,Apply lime,Calcitic Lime,500–1000 kg/ha,MEDIUM
+pH,Optimal,6.0 ≤ sensor_pH ≤ 7.5,No action,—,—,OK
+pH,Alkaline,7.5 < sensor_pH ≤ 8.5,Apply sulfur / gypsum,Elemental Sulfur,200–500 kg/ha,MEDIUM
+pH,Very Alkaline,sensor_pH > 8.5,ALERT: Salinity/Na likely,Gypsum + Sulfur,2000–5000 kg/ha,HIGH
+Moisture,Dry,sensor_VWC < 20%,ALERT: Irrigate immediately,Irrigation,50–75 mm/week,HIGH
+Moisture,Low,20% ≤ VWC < ideal_min,Schedule irrigation,Irrigation (deficit),30–50 mm/week,MEDIUM
+Moisture,Optimal,ideal_min ≤ VWC ≤ ideal_max,No action,—,—,OK
+Moisture,Wet,ideal_max < VWC ≤ 80%,Reduce irrigation,—,—,LOW
+Moisture,Waterlogged,VWC > 80% (non-paddy),ALERT: Drain urgently,Open drainage furrows,—,HIGH
+Temp,Cold Stress,sensor_T < crop_T_min,Protect with covers / smoke,K fertilizer (preventive),40 kg K₂O/ha,HIGH
+Temp,Optimal,crop_T_min ≤ T ≤ crop_T_max,No action,—,—,OK
+Temp,Heat Stress,sensor_T > crop_T_max,Shade nets + misting,Kaolin spray 5%,50 kg/ha in water,HIGH
+Humidity,Low RH,sensor_RH < crop_RH_min,Activate misting system,Foliar glycine betaine,2 g/L spray,MEDIUM
+Humidity,Optimal,crop_RH_min ≤ RH ≤ crop_RH_max,No action,—,—,OK
+Humidity,High RH,sensor_RH > crop_RH_max,Improve ventilation; fungicide,Copper oxychloride,3 g/L spray,MEDIUM

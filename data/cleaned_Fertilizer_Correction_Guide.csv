@@ -1,0 +1,96 @@
+Parameter,Condition / Deficiency Level,Possible Symptom in Plant,Primary Fertilizer / Amendment,Chemical Formula,Nutrient Content,Recommended Dose (kg/ha or as noted),Application Method & Timing,Secondary / Alternate Option,pH Range Where Fertilizer Works Best,Caution / Side Effect,Expected Response Time
+NITROGEN (N),"Mild deficiency
+(N: 50–80% of ideal)",Pale green / light yellow older leaves; slow growth,Urea,CO(NH₂)₂,46% N,"60–80 kg N/ha
+(130–175 kg Urea/ha)","Broadcast + incorporate before sowing OR split: 50% basal, 25% at tillering, 25% at panicle initiation",Calcium Ammonium Nitrate (CAN),6.0–8.0,Avoid applying when soil is dry or waterlogged; volatilization loss if surface-applied without irrigation,7–14 days
+NITROGEN (N),"Severe deficiency
+(N: < 50% of ideal)",Yellow leaves starting from base; stunted plants; early leaf drop,DAP (Di-ammonium Phosphate),( NH₄)₂HPO₄,18% N + 46% P₂O₅,"100 kg DAP/ha
++ foliar spray: 2% Urea",Basal application + foliar spray every 7 days for 3 applications,"Ammonium Sulphate
+(21% N + 24% S)",6.0–7.5,DAP raises pH slightly; retest pH after application; excess N causes lodging in cereals,5–10 days for foliar
+NITROGEN (N),"Toxicity / Excess
+(N >> ideal)",Dark green leaves; excessive vegetative growth; delayed maturity,Stop N application; apply more irrigation to leach,—,—,Increase irrigation by 20–30% to leach excess NO₃⁻,Stop all N fertilizers; apply potassium to balance; allow natural depletion,Activated charcoal for acute cases,—,Excess N increases pest/disease susceptibility; delays harvest,2–4 weeks
+PHOSPHORUS (P),"Mild deficiency
+(P: 50–80% of ideal)",Purple/reddish tinge on undersides of leaves; slow root development,Single Super Phosphate (SSP),Ca(H₂PO₄)₂,16% P₂O₅ + 11% S + 21% Ca,"375–500 kg SSP/ha
+(60–80 kg P₂O₅/ha)",Basal incorporation before planting; band placement near root zone preferred,"Rock Phosphate
+(direct application for acid soils)",5.5–7.0,P fixation is high in red/laterite soils of Telangana; use band placement to reduce fixation,2–3 weeks
+PHOSPHORUS (P),"Severe deficiency
+(P: < 50% of ideal)",Stunted root growth; poor flowering; poor fruit/grain set; dark purple color,DAP (Di-ammonium Phosphate),(NH₄)₂HPO₄,46% P₂O₅ + 18% N,"100–150 kg DAP/ha
++ foliar: 2% DAP spray",Basal + one foliar spray at vegetative stage; combine with mycorrhizal inoculant,"Triple Super Phosphate (TSP)
+46% P₂O₅",6.0–7.0,P interacts with Zn — excess P causes Zn deficiency; monitor zinc levels,14–21 days
+PHOSPHORUS (P),"High pH reduces P availability
+(pH > 7.5)",Similar to P deficiency even when P was applied,Elemental Sulfur (S),S,90–95% S,200–400 kg S/ha,Incorporate 4–6 weeks before sowing to allow acidification by soil bacteria,"Gypsum (CaSO₄·2H₂O)
++ foliar phosphate spray",Lowers to 6.0–7.0,Slow acting; retest pH after 6–8 weeks; sulfur oxidation needs moisture and warm soil,4–8 weeks
+POTASSIUM (K),"Mild deficiency
+(K: 50–80% of ideal)",Scorching / brown edges on older leaves; weak stems,Muriate of Potash (MOP),KCl,60% K₂O,"100–120 kg MOP/ha
+(60–72 kg K₂O/ha)","Basal or split: 50% at planting, 50% at knee-high stage; avoid direct seed contact","Potassium Sulfate (SOP)
+50% K₂O + 17% S",6.0–8.0,Avoid MOP for tobacco & potato (Cl-sensitive crops); use SOP instead,7–14 days
+POTASSIUM (K),"Severe deficiency
+(K: < 50% of ideal)",Marginal leaf scorch on older leaves; poor fruit quality; increased disease,Potassium Sulfate (SOP),K₂SO₄,50% K₂O + 17% S,"150–200 kg SOP/ha
++ foliar: 1% KNO₃",Basal incorporation + emergency foliar spray with 1% potassium nitrate every 10 days for 3 doses,NPK Complex (e.g. 13:0:45),6.0–8.0,Sandy soils have low K retention; split applications essential in such soils,5–10 days for foliar
+POTASSIUM (K),"Excess / Luxury uptake
+(K >> ideal)",Calcium & magnesium deficiency induced by K antagonism,Stop K application; apply Dolomite,CaMg(CO₃)₂,21% Ca + 13% Mg,400–500 kg dolomite/ha,Broadcast and incorporate; rebalance Ca:Mg:K ratio,Calcium nitrate foliar spray,6.0–7.5,K:Mg ratio should be < 3:1; excess K also locks out boron,3–4 weeks
+SOIL pH,"Too Acidic
+pH < 5.5",Multiple nutrient deficiencies; Al & Mn toxicity; poor microbial activity,Agricultural Lime (Calcitic),CaCO₃,38–40% Ca,"1000–2000 kg/ha
+(based on soil buffer pH)",Incorporate 4–6 weeks before planting; apply in dry weather; retest after 8 weeks,"Dolomitic Lime
+CaMg(CO₃)₂ if Mg also low",Raises to 6.0–7.0,Over-liming causes Mn and Zn deficiency; increase dose gradually; max 2 t/ha per season,6–8 weeks
+SOIL pH,"Mildly Acidic
+pH 5.5–6.0",Mild Al toxicity; reduced P availability; reduced legume nodulation,Agricultural Lime,CaCO₃,38–40% Ca,500–1000 kg/ha,Broadcast and incorporate before planting; apply with irrigation,Wood ash (K-rich liming agent),Raises to 6.0–6.5,Wood ash also provides K and Ca; test wood ash nutrient content before use,4–6 weeks
+SOIL pH,"Too Alkaline
+pH > 8.0","P, Fe, Mn, Zn, B, Cu deficiencies; sodium toxicity possible",Elemental Sulfur,S,90–95% S,"500–1000 kg S/ha
+(to lower pH by 1 unit in loam)",Incorporate 6–8 weeks before planting; maintain soil moisture for bacterial oxidation,"Gypsum (for sodic soils)
++ foliar Fe/Zn/Mn spray",Lowers to 6.5–7.5,Sulfur needs warm moist soil & Thiobacillus bacteria to work; acidified water for drip irrigation helps,6–12 weeks
+SOIL pH,"Saline-Alkaline
+pH 7.5–8.5, EC > 4 dS/m",Poor germination; leaf burn; wilting despite adequate moisture,Gypsum,CaSO₄·2H₂O,23% Ca + 18% S,"2000–5000 kg/ha
+(based on SAR value)",Broadcast and irrigate heavily to leach salts; use flood irrigation in first season,"Press mud / FYM
++ sulfuric acid drip",Reclaims to 7.0–8.0,Requires good drainage to leach salts; use salt-tolerant crop varieties during reclamation,1–2 cropping seasons
+SOIL MOISTURE,"Dry Stress
+< 20% VWC",Wilting; leaf roll; poor nutrient uptake; blossom drop,Irrigation – Drip / Sprinkler,—,—,"Restore to 40–60% VWC
+Drip: 3–5 mm/day (vegetables)
+Flood: 50–75 mm/week (rice)",Apply in early morning or evening; split into 2–3 shorter sessions to improve infiltration,"Mulching (straw/plastic)
+to reduce evaporation",—,Combine with deficit irrigation for water-stressed regions; use tensiometer for precision,Within 24–48 hrs
+SOIL MOISTURE,"Waterlogged
+> 80% VWC (non-paddy)",Root rot; yellowing; anaerobic odor; wilting despite water,Improve Drainage,—,—,"Create furrows / raised beds;
+install subsurface drainage tiles at 60–90 cm depth",Stop all irrigation; create drainage furrows immediately; apply Trichoderma for root rot,"Gypsum (for compacted soil)
++ organic matter",—,Waterlogging for > 48 hrs causes irreversible root damage in most vegetable crops,2–5 days for drainage
+AIR TEMPERATURE,"Too High
+> crop max threshold",Heat stress; flower drop; poor pollination; sunscald,Shade Nets (35–50% shade),—,—,"Install shade net at 6–8 ft height;
+use reflective mulch",Increase irrigation frequency; use kaolin spray (5%) to reflect radiation,Evaporative cooling / misting,—,Kaolin clay spray is safe and effective for horticulture crops; reapply after rain,Immediate
+AIR TEMPERATURE,"Too Low
+< crop min threshold",Chilling injury; frost damage; slow growth; color break in fruits,Row Covers / Poly Tunnels,—,—,"Cover crops with 30–50 GSM agro fabric
+at night; smoke pots for severe frost",Apply potassium fertilizer to improve cold hardiness; avoid excess N before cold season,"Irrigation (flood) for frost
+protection in orchards",—,High K improves cold tolerance by improving cell osmotic potential,Immediate for covers
+AIR HUMIDITY,"Too Low
+< 40% RH",Blossom drop; tip burn; spider mite infestation; poor fruit set,Misting / Micro-sprinklers,—,—,"Run misting 4–6 times/day
+for 5–10 min each; target leaf wetness index < 8 hrs to avoid disease",Mulching; windbreaks; increase plant density,"Foliar spray of glycine betaine
+(anti-transpirant)",—,High humidity misting increases fungal disease risk; balance with good air circulation,Within hours
+AIR HUMIDITY,"Too High
+> 85% RH","Fungal diseases (blight, powdery mildew, botrytis); root rot","Improve air circulation;
+reduce irrigation",—,—,"Create wider row spacing;
+pruning to improve canopy ventilation","Copper-based fungicide spray (preventive);
+Potassium silicate to strengthen cell walls","Calcium nitrate foliar spray
+(strengthens cell walls)",—,Potassium silicate (2–3 ml/L) significantly reduces fungal penetration,Preventive — 7–14 days
+ZINC (Zn),"Deficiency
+(common in Telangana soils)",Little leaf; shortened internodes; mottled young leaves,Zinc Sulphate,ZnSO₄·7H₂O,21–23% Zn,"25 kg ZnSO₄/ha (soil)
+or foliar: 0.5% ZnSO₄ + 0.25% lime",Basal incorporation OR foliar spray at 2-leaf stage; repeat after 10 days,"Chelated Zinc (EDTA-Zn)
+for alkaline soils",5.5–7.0,Most effective foliar spray in alkaline soils where soil Zn is fixed; acidify spray water,5–10 days foliar
+BORON (B),"Deficiency
+(hollow stem, flower drop)",Cracked stems; hollow fruits; flower drop; distorted young leaves,Borax,Na₂B₄O₇·10H₂O,11% B,"1–2 kg Borax/ha (soil)
+or foliar: 0.1–0.2% Borax spray",Mix in sand before broadcast; foliar spray at bud initiation; repeat in 10 days,"Solubor (20% B)
+for foliar application",6.0–7.5,NEVER exceed 2 kg B/ha soil — boron toxicity is very difficult to reverse,7–14 days
+IRON (Fe),"Deficiency – Interveinal
+chlorosis in young leaves",Young leaves yellow between green veins; alkaline soil common cause,Ferrous Sulphate,FeSO₄·7H₂O,19% Fe,"25–50 kg FeSO₄/ha (soil)
+or foliar: 0.5% FeSO₄ + 0.1% citric acid",Soil: mix with compost to prevent fixation; foliar: spray with acidified water at 7-day interval x3,"Chelated Iron (Fe-EDTA or
+Fe-DTPA) for alkaline soils","5.0–6.5
+(poor above 7.0)",Fe soil application is ineffective in pH > 7.0; use chelated DTPA form for such soils,5–7 days foliar
+MAGNESIUM (Mg),"Deficiency
+(interveinal chlorosis
+older leaves)",Yellow between veins on older leaves; early leaf drop,"Magnesium Sulphate
+(Epsom Salt)",MgSO₄·7H₂O,9.6% Mg + 13% S,"50–100 kg MgSO₄/ha (soil)
+or foliar: 2% MgSO₄ spray",Basal or top-dress; foliar spray at 15-day interval; 2–3 applications,"Dolomite Lime
+(if soil is also acidic)",5.5–7.5,Common in sandy soils and high-K soils; K:Mg ratio should be < 3:1,7–14 days foliar
+CALCIUM (Ca),"Deficiency
+(BER, tip burn, hollow fruit)",Blossom end rot in tomato/pepper; tip burn in cabbage; cracked fruit,Calcium Nitrate,Ca(NO₃)₂,15.5% Ca + 14.5% N,"Foliar: 0.5–1% CaNO₃ spray
+every 7–10 days from fruit set",Foliar spray at fruit set; avoid applying with sulfate or phosphate fertilizers,"Gypsum (if Ca + S needed)
+or Calcium Chloride foliar",6.0–7.5,Ca is absorbed by young tissues only via transpiration; keep soil moisture adequate,7–14 days
+SULFUR (S),"Deficiency
+(young leaves pale yellow)",Uniform yellowing of new leaves; stunted growth; delayed maturity,Elemental Sulfur,S,90–95% S,20–40 kg S/ha,Basal incorporation; allow 3–4 weeks for oxidation; wet/warm soil accelerates release,"Ammonium Sulphate
+(21% N + 24% S)",5.5–7.0,Sulfur also lowers pH; beneficial in alkaline Telangana soils; monitor pH after application,3–6 weeks

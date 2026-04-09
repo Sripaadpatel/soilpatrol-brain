@@ -1,0 +1,48 @@
+Unnamed: 0,Unnamed: 1,ZINC (Zn)  —  Critical: >0.6 mg/kg,Unnamed: 3,Unnamed: 4,BORON (B)  —  Critical: >0.5 mg/kg,Unnamed: 6,Unnamed: 7,IRON (Fe)  —  Critical: >4.5 mg/kg,Unnamed: 9,Unnamed: 10,SULFUR (S)  —  Critical: >10 mg/kg,Unnamed: 12,Unnamed: 13,MAGNESIUM (Mg)  —  Critical: >120 mg/kg,Unnamed: 15,Unnamed: 16,CALCIUM (Ca)  —  Critical: >200 mg/kg,Unnamed: 18,Unnamed: 19
+State,Soil Type / Agro-ecological Zone,"Zn Mean
+(mg/kg)","Zn Range
+(mg/kg)","Zn Deficient
+Soils (%)","B Mean
+(mg/kg)","B Range
+(mg/kg)","B Deficient
+Soils (%)","Fe Mean
+(mg/kg)","Fe Range
+(mg/kg)","Fe Deficient
+Soils (%)","S Mean
+(mg/kg)","S Range
+(mg/kg)","S Deficient
+Soils (%)","Mg Mean
+(mg/kg)","Mg Range
+(mg/kg)",Mg Status,"Ca Mean
+(mg/kg)","Ca Range
+(mg/kg)",Ca Status
+Andhra Pradesh,"Red & laterite, black cotton, alluvial coastal",0.71,0.10–3.20,42.1%,0.62,0.05–4.10,35.4%,12.8,1.2–85,28.6%,18.2,2.1–92,55.2%,185,80–320,Low–Med,320,120–680,Adequate
+Arunachal Pradesh,"Forest hill soils, acidic, high OM",1.25,0.40–4.80,18.2%,1.1,0.20–5.60,22.1%,58.4,8.0–280,5.2%,12.4,3.2–68,38.4%,210,100–480,Medium,380,180–720,Adequate
+Assam,"Alluvial, acid, high rainfall, low pH",0.82,0.05–3.90,38.6%,0.74,0.10–4.20,42.8%,28.6,2.2–180,14.2%,10.4,1.5–58,68.4%,175,60–340,Low–Med,280,100–520,Low–Med
+Bihar,"Alluvial Indo-Gangetic, calcareous soils",0.68,0.05–2.80,58.4%,0.44,0.02–2.10,62.8%,14.2,0.8–68,22.4%,14.8,2.0–72,64.2%,162,55–310,Low,298,110–580,Adequate
+Chhattisgarh,"Red & yellow, forest soils, some black",0.74,0.08–3.40,47.2%,0.58,0.05–3.60,44.6%,18.6,1.0–92,25.4%,15.6,2.2–78,58.6%,168,60–330,Low–Med,265,95–510,Low–Med
+Goa,"Lateritic, coastal alluvial, acidic",0.92,0.15–4.20,31.4%,0.78,0.10–4.80,30.2%,32.8,3.5–195,10.2%,9.8,1.2–48,72.4%,195,80–380,Medium,315,130–560,Adequate
+Gujarat,"Black cotton (Vertisols), arid saline, alluvial",0.55,0.03–2.40,66.8%,0.42,0.02–1.80,58.4%,9.2,0.5–55,36.8%,8.6,1.0–42,78.6%,145,45–280,Low,420,150–860,High
+Haryana,"Alluvial IGP, some saline-alkali",0.74,0.05–2.90,52.8%,0.62,0.05–3.20,42.4%,16.8,0.8–72,28.4%,18.4,2.5–88,52.2%,178,62–345,Low–Med,368,140–720,Adequate
+Himachal Pradesh,"Mountain, forest, acidic hill soils",1.18,0.20–5.20,22.4%,0.88,0.10–4.60,28.6%,45.2,4.5–240,8.4%,16.2,3.2–84,44.8%,218,90–420,Medium,342,140–650,Adequate
+Jharkhand,"Red lateritic, acidic, forest soils",0.68,0.06–3.20,52.4%,0.52,0.05–3.10,48.6%,22.4,1.5–120,20.2%,12.8,1.8–64,66.4%,155,50–310,Low,248,90–490,Low–Med
+Karnataka,"Red laterite, black cotton, coastal alluvial",0.62,0.05–2.80,55.6%,0.55,0.04–3.20,50.4%,14.6,0.8–82,30.4%,16.4,2.0–86,62.4%,172,58–340,Low–Med,295,110–580,Adequate
+Kerala,"Lateritic, coastal alluvial, acid, high rainfall",1.02,0.12–4.80,28.4%,0.85,0.08–5.20,32.6%,38.6,3.8–210,8.4%,8.2,0.8–42,80.4%,192,72–385,Medium,285,110–540,Low–Med
+Madhya Pradesh,"Black cotton (Vertisols), red, mixed",0.58,0.03–2.60,62.4%,0.46,0.02–2.20,55.8%,12.8,0.6–68,34.6%,11.2,1.2–56,72.8%,148,45–295,Low,352,130–680,Adequate
+Maharashtra,"Black cotton, red, lateritic, coastal",0.64,0.04–2.90,58.2%,0.5,0.03–2.80,52.4%,13.8,0.7–75,32.4%,12.6,1.4–64,68.6%,158,50–315,Low,378,140–720,Adequate
+Manipur,"Hilly acidic, alluvial valley soils",0.96,0.12–4.40,30.2%,0.82,0.10–4.60,34.8%,42.6,4.0–220,9.2%,11.4,2.0–58,52.4%,202,82–395,Medium,312,120–580,Adequate
+Meghalaya,"Acidic forest hill soils, lateritic",1.08,0.18–5.10,25.6%,0.92,0.12–5.40,28.4%,52.4,6.0–260,6.8%,10.6,1.5–54,56.8%,215,88–425,Medium,330,130–620,Adequate
+Mizoram,"Acidic hill soils, high forest OM",1.14,0.22–5.40,22.8%,0.98,0.14–5.80,25.6%,55.8,7.2–285,5.8%,11.2,1.8–58,50.4%,220,92–440,Medium,345,135–640,Adequate
+Nagaland,"Acidic hill, high OM, forest soils",1.1,0.20–5.20,24.2%,0.94,0.12–5.50,26.8%,50.2,6.5–270,6.4%,11.8,1.9–60,48.6%,218,90–435,Medium,338,132–635,Adequate
+Odisha,"Red lateritic, alluvial coastal, some black",0.66,0.05–2.95,55.4%,0.48,0.03–2.60,58.6%,20.4,1.2–108,22.8%,13.4,1.6–68,68.2%,162,52–322,Low–Med,272,100–525,Low–Med
+Punjab,"Alluvial IGP, some saline-alkali",0.8,0.06–3.10,45.4%,0.65,0.05–3.40,38.8%,18.4,0.9–78,26.4%,22.4,3.0–98,44.6%,182,65–355,Low–Med,375,145–720,Adequate
+Rajasthan,"Arid desert, black cotton, saline, alluvial",0.52,0.02–2.20,70.2%,0.4,0.02–1.60,64.6%,8.6,0.4–48,40.2%,7.8,0.8–38,82.4%,132,38–265,Low,442,155–880,High
+Sikkim,"Acidic mountain, forest, high OM",1.3,0.45–5.60,16.8%,1.18,0.20–6.20,18.4%,62.4,9.0–310,4.8%,13.6,3.5–72,38.4%,225,95–455,Medium,355,140–660,Adequate
+Tamil Nadu,"Red laterite, alluvial, black cotton, coastal",0.75,0.08–3.30,44.8%,0.52,0.04–3.10,52.6%,16.2,0.9–86,28.4%,14.8,1.8–74,60.4%,170,58–338,Low–Med,305,115–590,Adequate
+Telangana,"Black cotton (Vertisols), red & yellow, alluvial",0.58,0.04–2.50,61.8%,0.48,0.03–2.40,54.8%,11.4,0.6–65,34.2%,14.6,1.5–72,64.8%,152,48–298,Low,362,135–695,Adequate
+Tripura,"Alluvial, lateritic, acidic, hill soils",0.88,0.10–4.10,35.4%,0.74,0.08–4.40,38.6%,30.2,2.8–165,12.4%,10.8,1.5–56,58.4%,188,72–368,Medium,298,112–565,Adequate
+Uttar Pradesh,"Alluvial IGP, calcareous, some saline-alkali",0.72,0.05–2.85,53.6%,0.56,0.04–3.00,46.8%,15.4,0.8–72,26.8%,16.8,2.2–82,58.8%,168,56–335,Low–Med,345,130–660,Adequate
+Uttarakhand,"Mountain, Terai alluvial, acidic hill",0.95,0.12–4.20,34.6%,0.78,0.10–4.50,34.2%,32.6,3.0–178,14.6%,17.4,2.8–86,48.4%,198,78–390,Medium,330,128–622,Adequate
+West Bengal,"Alluvial, lateritic, coastal, acid",0.76,0.06–3.40,48.6%,0.62,0.05–3.60,44.2%,24.8,1.8–132,18.6%,11.2,1.4–56,70.4%,178,62–348,Low–Med,288,108–555,Low–Med
+Jammu & Kashmir,"Mountain, Kandi zone, alluvial valley, alkaline",0.88,0.10–4.00,36.4%,0.72,0.08–4.20,38.2%,36.4,3.5–198,12.2%,15.4,2.4–78,50.6%,195,76–385,Medium,348,135–655,Adequate
+Ladakh,"Cold desert, alkaline, low OM",0.42,0.02–1.60,74.8%,0.32,0.02–1.20,72.4%,6.2,0.3–32,48.4%,5.8,0.6–28,88.6%,118,35–238,Low,512,180–980,High

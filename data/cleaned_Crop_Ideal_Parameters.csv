@@ -1,0 +1,39 @@
+Crop,Category,N Min (kg/ha),N Max (kg/ha),P Min (kg/ha),P Max (kg/ha),K Min (kg/ha),K Max (kg/ha),pH Min,pH Max,Air Temp Min (°C),Air Temp Max (°C),Air Humidity Min (%),Air Humidity Max (%),Soil Moisture Min (% VWC),Soil Moisture Max (% VWC),Rainfall (mm/yr),Season / Crop Duration,Notes
+Rice,Cereal,80,120,40,60,40,60,5.5,6.5,20,35,80,90,60,80,1200-2000,Kharif / 120-150 days,Requires standing water during vegetative stage; highly sensitive to K deficiency
+Wheat,Cereal,100,120,50,60,40,50,6.0,7.0,12,25,50,70,40,60,450-650,Rabi / 120-150 days,Cool season crop; iron chlorosis in alkaline soils; avoid waterlogging
+Maize,Cereal,120,150,60,80,40,60,5.8,7.0,18,32,55,75,40,65,500-800,Kharif or Rabi / 90-120 days,High N feeder; susceptible to zinc deficiency; good drainage needed
+Sorghum,Cereal,80,100,40,60,40,60,6.0,7.5,26,34,35,60,30,55,450-650,Kharif / 100-120 days,Drought tolerant; performs well in Deccan plateau soils
+Pearl Millet,Cereal,60,80,30,40,30,40,6.0,7.5,25,35,35,60,25,50,300-500,Kharif / 75-90 days,Very drought tolerant; suited for sandy loam soils
+Barley,Cereal,80,100,40,50,30,40,6.0,7.5,12,25,45,65,35,55,400-600,Rabi / 100-120 days,Tolerates salinity better than wheat
+Chickpea,Pulse,20,30,40,60,20,30,6.0,7.5,15,28,40,65,25,45,400-500,Rabi / 90-120 days,Fixes atmospheric N; inoculate with Rhizobium; sensitive to waterlogging
+Pigeonpea,Pulse,20,25,50,60,20,30,6.0,7.5,25,35,50,70,30,50,600-1000,Kharif / 150-180 days,Deep rooted; tolerates drought; do not over-apply N
+Blackgram,Pulse,20,25,40,50,20,25,6.0,7.0,25,35,60,80,35,55,600-800,Kharif / 65-75 days,Short duration; waterlogging sensitive
+Greengram,Pulse,20,25,40,50,20,25,6.0,7.0,25,35,60,80,35,55,500-700,Kharif / 60-75 days,Similar to blackgram; inoculate seeds with Rhizobium
+Lentil,Pulse,20,25,40,60,20,30,6.0,8.0,15,25,40,60,25,45,300-500,Rabi / 100-110 days,Cold tolerant pulse; poor drainage causes root rot
+Groundnut,Oilseed,20,25,60,80,40,60,6.0,6.5,25,35,50,75,35,60,500-700,Kharif / 95-120 days,Needs calcium for pod filling; gypsum application recommended
+Mustard,Oilseed,80,100,40,50,30,40,6.0,7.5,10,25,40,60,30,50,400-600,Rabi / 90-110 days,Sulfur requirement is high; boron deficiency common
+Sunflower,Oilseed,90,120,60,80,60,80,6.0,7.5,20,32,40,65,35,55,500-750,Kharif or Rabi / 90-100 days,Boron deficiency causes hollow stem; high K demand
+Sesame,Oilseed,40,60,30,40,20,30,5.5,7.5,25,35,40,65,25,50,400-600,Kharif / 80-90 days,Very drought sensitive at flowering; well-drained sandy loam ideal
+Soybean,Oilseed,25,30,60,80,30,40,6.0,7.0,20,30,60,80,40,65,600-900,Kharif / 90-120 days,Rhizobium inoculation essential; lime if pH < 6.0
+Cotton,Cash Crop,100,150,50,60,50,60,6.0,8.0,25,35,50,80,35,60,700-1000,Kharif / 150-180 days,High N & K feeder; boron critical at flowering; avoid excess N
+Sugarcane,Cash Crop,150,200,60,80,100,150,6.0,7.5,20,35,70,85,55,75,1500-2500,Annual / 12-18 months,Heaviest feeder; split N application mandatory; zinc & iron common deficiencies
+Jute,Cash Crop,100,120,60,80,40,60,6.0,7.5,25,35,70,90,55,75,1500-2000,Kharif / 100-120 days,Needs high humidity; flooding tolerant in early stage
+Tobacco,Cash Crop,80,100,40,60,80,120,5.5,6.5,20,30,50,70,35,55,600-1200,Rabi / 90-120 days,High K demand; avoid Cl-containing K fertilizers; use SOP
+Tomato,Vegetable,120,150,80,100,100,120,6.0,6.8,18,27,60,75,40,65,600-1200,All seasons / 90-120 days,Calcium critical to prevent BER; magnesium & boron important
+Potato,Vegetable,150,180,80,100,150,180,5.0,6.5,15,25,60,80,50,70,500-700,Rabi / 90-120 days,Very high K demand; avoid excess N at tuber initiation; sulfur needed
+Onion,Vegetable,80,100,50,60,60,80,6.0,7.0,15,28,55,75,40,60,600-900,Rabi / 120-150 days,Sulfur critical for pungency; boron for bulb quality
+Chilli,Vegetable,100,120,60,80,80,100,6.0,7.0,20,32,60,80,40,65,600-1200,All seasons / 90-120 days,Magnesium & calcium critical; boron at flowering
+Brinjal,Vegetable,100,120,60,80,60,80,5.5,7.0,22,32,60,80,40,65,600-900,All seasons / 90-120 days,Borax spray at flowering helps fruit set
+Cabbage,Vegetable,100,120,60,80,60,80,6.0,7.0,15,25,60,80,45,65,400-700,Rabi / 90-120 days,Boron deficiency causes hollow stem; calcium needed
+Cauliflower,Vegetable,120,150,60,80,60,80,6.0,7.0,15,25,60,80,45,65,400-700,Rabi / 90-120 days,Boron critical for curd formation; molybdenum deficiency common
+Bitter Gourd,Vegetable,80,100,60,80,60,80,6.0,7.0,25,35,65,85,40,65,600-1000,Kharif / 75-90 days,Zinc deficiency common; good drainage required
+Banana,Fruit,200,250,100,120,200,300,5.5,7.0,25,35,70,90,55,80,1200-2200,Annual / 10-13 months,Highest K feeder of all crops; magnesium & zinc critical
+Mango,Fruit,80,100,40,60,40,60,5.5,7.5,24,35,40,80,35,60,800-1500,Perennial / 4-5 yrs fruiting,Potassium at pre-flowering; boron for fruit set; zinc deficiency common
+Papaya,Fruit,100,120,80,100,80,100,6.0,7.0,22,32,60,85,45,70,1000-1500,Annual / 10-12 months,High P for root development; zinc & boron important
+Pomegranate,Fruit,50,75,40,60,50,75,6.5,7.5,25,38,35,65,30,55,500-800,Perennial / 3 yrs fruiting,Tolerates salinity; boron at flowering; avoid excess water
+Turmeric,Spice,30,40,30,40,60,80,5.5,7.0,20,30,65,90,55,75,1500-2000,Kharif / 8-9 months,High K demand for rhizome development; well-drained loam
+Ginger,Spice,75,100,50,75,75,100,5.5,6.5,20,30,65,90,55,75,1500-2000,Kharif / 8-9 months,Shade tolerant; boron & zinc important; avoid waterlogging
+Turmeric,Spice,30,40,30,40,60,80,5.5,7.0,20,30,65,90,55,75,1500-2000,Kharif / 8-9 months,High K demand for rhizome development; well-drained loam
+Coffee,Plantation,80,100,40,60,80,100,5.5,6.5,18,28,70,90,50,70,1500-2500,Perennial,Shade grown; potassium & magnesium critical; zinc & boron needed
+Tea,Plantation,100,150,30,50,30,50,4.5,5.5,15,28,75,90,55,75,1500-2500,Perennial,Acid loving; highest N feeder among plantations; zinc important
+Coconut,Plantation,50,75,30,50,150,200,5.5,7.0,25,35,70,90,50,75,1200-2500,Perennial,Highest K demand among plantations; boron & zinc critical; salt tolerant

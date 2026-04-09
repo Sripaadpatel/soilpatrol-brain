@@ -1,0 +1,18 @@
+Nutrient,Extraction Method,Critical Limit (mg/kg),Acute Deficient (mg/kg),Deficient (mg/kg),Latent Deficient (mg/kg),Marginally Sufficient (mg/kg),Adequate (mg/kg),India Mean (mg/kg),Affected Soils (% of India)
+Zinc (Zn),DTPA-TEA (pH 7.3) extraction,>0.60,≤0.30,0.31–0.60,0.61–1.00,1.01–1.50,>1.50,1.40,51.2%
+Boron (B),Hot water soluble (Berger & Truog),>0.50,≤0.20,0.21–0.50,0.51–1.00,1.01–2.00,>2.00,1.40,44.7%
+Iron (Fe),DTPA-TEA (pH 7.3) extraction,>4.50,≤2.00,2.01–4.50,4.51–10.0,10.1–20.0,>20.0,31.0,19.2%
+Sulfur (S),CaCl₂ extraction (0.15%) 1:5,>10.0,≤7.50,7.51–15.0,15.1–22.5,22.6–30.0,>30.0,27.0,58.6%
+Magnesium (Mg),1N NH₄OAc extraction (pH 7),>120,≤60,61–120,121–200,201–300,>300,~175,~25%
+Calcium (Ca),1N NH₄OAc extraction (pH 7),>200,≤100,101–200,201–400,401–600,>600,~330,~12%
+📚  PRIMARY DATA SOURCES — Access these for raw district-level data,,,,,,,,,
+Source,Description,Coverage,Access Link / Reference,Data Format,Best For,,,,
+Soil Health Card (SHC) Portal,"27 million+ soil tests, all India, district & village level, Zn, Fe, B, S, N, P, K, pH, EC","All 36 states/UTs, all districts",soilhealth.dac.gov.in → Reports → State-District Reports,"Web dashboard, CSV download",District/village level current data,,,,
+ICAR-AICRP-MSPE (2012–2018),"2,42,827 samples, 28 states, 615 districts. Gold standard for micronutrients","28 states, 615 districts","Shukla et al., Scientific Reports (2021), DOI: 10.1038/s41598-021-99040-2",Peer-reviewed paper + supplementary tables,State & regional deficiency %,,,,
+ICAR-IISS Technical Bulletins,District-specific micronutrient maps for major states,"State-specific (MP, UP, Bihar, AP, TN etc.)",iiss.res.in → Publications → Technical Bulletins,PDF reports with tables & maps,State-level research reports,,,,
+Soil Intelligence System India (SIS),"250m resolution digital soil maps for Bihar, Andhra Pradesh",Bihar & Andhra Pradesh (2018-2021),sisindia.isric.org,GIS raster maps + downloadable CSV,High-resolution spatial interpolation,,,,
+NBSS&LUP Soil Series,National Bureau of Soil Survey — soil series classification with nutrient ranges,"All India, soil-type level",nbsslup.icar.gov.in → Databases,"Reports, geodatabase",Soil-type baseline values,,,,
+FAO Global Soil Database,"Global soil properties at 1km resolution, includes some micronutrient layers",Global / India layers,fao.org/soils-portal/data-hub → HWSD / SoilGrids,"NetCDF, GeoTIFF, CSV","Spatial interpolation, GIS mapping",,,,
+Kaggle: Crop Recommendation Dataset,"N, P, K, pH, temp, humidity, rainfall — 2200 records, 22 crops",India-wide training dataset,kaggle.com/datasets/atharvaingle/crop-recommendation-dataset,CSV — ready for ML,ML model training,,,,
+PJTSAU (Telangana),"Soil test data for Telangana districts — Zn, Fe, B, S, N, P, K",All 33 Telangana districts,pjtsau.edu.in → Extension → Soil Testing Reports,PDF/Excel state reports,Telangana-specific district data,,,,
+IARI New Delhi Publications,"Micronutrient research bulletins, crop-soil response data","India-wide, crop-specific",iari.res.in → Research → Soil Science,PDF research reports,Crop-specific nutrient response,,,,
