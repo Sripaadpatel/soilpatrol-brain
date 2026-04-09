@@ -19,7 +19,13 @@ ai_client = genai.Client(api_key=GEMINI_API_KEY)
 
 app = FastAPI(title="SoilPatrol Multi-Tool AI Brain")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+report_cache = TTLCache(maxsize=1000, ttl=10800)
 
+def generate_cache_key(tool_name: str, request_dict: dict) -> str:
+    """Creates a unique ID for this specific request to check if we've seen it recently."""
+    # Convert dict to a string and hash it
+    dict_str = json.dumps(request_dict, sort_keys=True)
+    return hashlib.md5(f"{tool_name}_{dict_str}".encode()).hexdigest()
 # --- DATA MODELS ---
 class SensorData(BaseModel):
     airTempC: float
@@ -69,30 +75,46 @@ def search_crop_knowledge(query: str):
 @app.post("/api/ai/suggest")
 async def tool_suggest_crop(request: SuggestionRequest):
     try:
+        # 1. Check the Memory first!
+        cache_key = generate_cache_key("suggest", request.model_dump())
+        if cache_key in report_cache:
+            print("CACHE HIT! Returning saved report.")
+            return {"status": "success", "report": report_cache[cache_key], "cached": True}
+
+        print("CACHE MISS. Generating new report...")
+        # 2. Generate the report (your existing logic)
         search_query = f"Crops that thrive in pH {request.sensorData.phLevel}, Temp {request.sensorData.airTempC}C, and Moisture {request.sensorData.soilMoisturePct}%"
         context = search_crop_knowledge(search_query)
 
-        prompt = f"""
-        TASK: Suggest 3 optimal crops based on this live sensor data:
-        N:{request.sensorData.nitrogenMg}, P:{request.sensorData.phosphorusMg}, K:{request.sensorData.potassiumMg}, pH:{request.sensorData.phLevel}, Temp:{request.sensorData.airTempC}C.
+        prompt = f"""... [Keep your existing prompt here] ..."""
         
-        KNOWLEDGE BASE: {context}
+        response = ai_client.models.generate_content(
+            model="gemini-1.5-flash", 
+            contents=prompt, 
+            config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.3)
+        )
         
-        REQUIREMENTS:
-        1. Current Soil Stats summary.
-        2. Suggest 3 crops. For each, list ideal conditions, required soil adjustments (based on EXPERT RULES), expected yield, and market price potential.
-        """
-        response = ai_client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.3))
-        return {"status": "success", "report": response.text}
+        # 3. Save the new report to Memory for the next 3 hours
+        report_cache[cache_key] = response.text
+        
+        return {"status": "success", "report": response.text, "cached": False}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 # ==========================================
-# TOOL 2: SOIL CHECK-IN
+# TOOL 2: SOIL CHECK-IN (WITH CACHE)
 # ==========================================
 @app.post("/api/ai/check-in")
 async def tool_soil_check_in(request: CheckInRequest):
     try:
+        # 1. Check the Memory first!
+        cache_key = generate_cache_key("check_in", request.model_dump())
+        if cache_key in report_cache:
+            print("CACHE HIT! Returning saved check-in report.")
+            return {"status": "success", "report": report_cache[cache_key], "cached": True}
+
+        print("CACHE MISS. Generating new check-in report...")
+        # 2. Generate the report
         context = search_crop_knowledge(f"Ideal parameters for {request.currentCrop}")
         
         prompt = f"""
@@ -107,17 +129,35 @@ async def tool_soil_check_in(request: CheckInRequest):
         3. Provide actionable fertilizer/amendment recommendations based on the EXPERT RULES.
         4. If the soil is catastrophically unsuited for {request.currentCrop}, suggest an alternative.
         """
-        response = ai_client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2))
-        return {"status": "success", "report": response.text}
+        response = ai_client.models.generate_content(
+            model="gemini-1.5-flash", 
+            contents=prompt, 
+            config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2)
+        )
+        
+        # 3. Save the new report to Memory for the next 3 hours
+        report_cache[cache_key] = response.text
+        
+        return {"status": "success", "report": response.text, "cached": False}
     except Exception as e:
+        import traceback
+        print(traceback.format_exc())
         raise HTTPException(status_code=500, detail=str(e))
 
 # ==========================================
-# TOOL 3: CROP SUITABILITY
+# TOOL 3: CROP SUITABILITY (WITH CACHE)
 # ==========================================
 @app.post("/api/ai/suitability")
 async def tool_crop_suitability(request: SuitabilityRequest):
     try:
+        # 1. Check the Memory first!
+        cache_key = generate_cache_key("suitability", request.model_dump())
+        if cache_key in report_cache:
+            print("CACHE HIT! Returning saved suitability report.")
+            return {"status": "success", "report": report_cache[cache_key], "cached": True}
+
+        print("CACHE MISS. Generating new suitability report...")
+        # 2. Generate the report
         context = search_crop_knowledge(f"Ideal parameters and environmental requirements for {request.targetCrop}")
         
         prompt = f"""
@@ -131,7 +171,17 @@ async def tool_crop_suitability(request: SuitabilityRequest):
         2. Show the delta between the Live Data and the Ideal Stats for this crop.
         3. List the required interventions (Fertilizer/Lime) needed before planting can begin.
         """
-        response = ai_client.models.generate_content(model="gemini-2.5-flash", contents=prompt, config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2))
-        return {"status": "success", "report": response.text}
+        response = ai_client.models.generate_content(
+            model="gemini-1.5-flash", 
+            contents=prompt, 
+            config=types.GenerateContentConfig(system_instruction=EXPERT_RULES, temperature=0.2)
+        )
+        
+        # 3. Save the new report to Memory for the next 3 hours
+        report_cache[cache_key] = response.text
+        
+        return {"status": "success", "report": response.text, "cached": False}
     except Exception as e:
+        import traceback
+        print(traceback.format_exc())
         raise HTTPException(status_code=500, detail=str(e))
